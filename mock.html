@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=0">
+        <title>template</title>
+        <link rel="stylesheet" href=".tmp/mock.css">
+    </head>
+    <body>
+        <div id="root">
+            <div class="mockLayer"></div>
+        </div>
+    <script src="bower_components/handlebars/handlebars.js"></script>
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src=".tmp/template.js"></script>
+    <script>
+        (function(){
+            //root要素に直接サイズスタイルをセット
+            var stageSize = {
+                w: 320,
+                h: window.innerHeight
+            };
+            $('#root').css({
+                width: stageSize.w,
+                height: stageSize.h
+            });
+
+            //layer要素に基本スタイルをセット
+            var layerEl = $('#root .mockLayer');
+            layerEl.css({
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                'z-index': 100
+            });
+
+            //テンプレートをlayer要素にappend
+            var templateEl = $(mock.Templates.mock());
+            layerEl.append(templateEl);
+        })()
+    </script>
+    </body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "mock-template-with-stylus-and-handlebars",
+  "version": "0.0.0",
+  "homepage": "https://github.com/HAKASHUN/mock-template-with-stylus-and-handlebars",
+  "authors": [
+    "HAKASHUN"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "handlebars": "~1.0.0",
+    "jquery": "~2.0.3"
+  }
+}
