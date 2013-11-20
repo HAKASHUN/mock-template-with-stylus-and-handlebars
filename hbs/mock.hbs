@@ -1,13 +1,67 @@
 {{!mock.Templates.mockでアクセス}}
 
-<header>
-    hoge
+<header class="osl-header">
+  <div class="osl-header-titlebar">
+    <div class="osl-header-title osl-centering-transform">
+      タイトル
+    </div>
+  </div>
+  <div class="osl-btn osl-header-btn" data-code="global-mypage">mypage</div>
+  <div class="osl-btn osl-header-btn" data-code="global-menu">menu</div>
 </header>
 
-<section>
-    hogehoge
-</section>
+<div class="osl-main">
+  <div class="osl-main-content">
+    <div id="mypage-btn-container">
+      <div id="mypage-btn-container-L">
+        <!--左側コンテナ-->
+      </div>
+      <div id="mypage-btn-container-R">
+        <!--右側コンテナ-->
+        <div class="osl-btn">お知らせ</div>
+        <div class="osl-btn">ギフト</div>
+      </div>
+    </div>
 
-<footer>
-    hoges
-</footer>
+    <div id="mypage-main-btn-container">
+      <div class="osl-btn" data-code="mypage-battle">バトル</div>
+      <div class="osl-btn" data-code="mypage-quest">クエスト</div>
+      <div class="osl-btn" data-code="mypage-gacha">装備ガチャ</div>
+      <div class="osl-btn" data-code="mypage-team">編成</div>
+      <div class="osl-btn" data-code="mypage-weapon">装備</div>
+      <div class="osl-btn" data-code="mypage-sell">売却</div>
+      <div class="osl-btn" data-code="mypage-mix">合成</div>
+      <div class="osl-btn" data-code="mypage-total">総戦力</div>
+    </div>
+
+  </div>
+
+  <div class="osl-banner">
+    <a>
+      <img width="260" height="64" /><br>
+      バナーテキスト
+    </a>
+  </div>
+  <div class="osl-banner">
+    <a>
+      <img width="260" height="64" /><br>
+      バナーテキスト
+    </a>
+  </div>
+  <div class="osl-banner">
+    <a>
+      <img width="260" height="64" /><br>
+      バナーテキスト
+    </a>
+  </div>
+
+  <footer class="osl-footer">
+    <ul class="osl-footer-container">
+      <li class="osl-btn">マイページ</li>
+      <li class="osl-btn">クエスト</li>
+      <li class="osl-btn">ガチャ</li>
+      <li class="osl-btn">デッキ</li>
+      <li class="osl-btn">メニュー</li>
+    </ul>
+  </footer>
+</div>
